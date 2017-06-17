@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <link href='styles/main.css' rel='stylesheet'  type="text/css">
+        <link href='vendor/angular-bootstrap/css/bootstrap-theme.css' rel='stylesheet'  type="text/css">
+        <link href='vendor/angular-bootstrap/css/bootstrap-theme.min.css' rel='stylesheet'  type="text/css">
+        <link href='vendor/angular-bootstrap/css/bootstrap.css' rel='stylesheet'  type="text/css">
+        <link href='vendor/angular-bootstrap/css/bootstrap.min.css' rel='stylesheet'  type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+
+    <body data-ng-app="DemoApp">
+        <div data-ng-controller="hiverapp">
+            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #459780;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <img src="images/hiverwhite.png" width="125" height="44" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <span class="glyphicon glyphicon-earphone pull-right copy-right-msg" style="color: #ffffff">+91 650-242-9081</span>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #459780;">
+                    <h1 style="color: white;">Wow Your Customer</h1>
+                    <h4 style="color: white;">with exceptional customer Hiver!</h4>
+                </div>
+                <div class=" form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #f9f9f9">
+                    <div class=" form-group col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                        <div class=" row">
+                            <div class="form-group col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center" style="padding-top: 15px;" >
+                                <img src="images/man.png" class="img-circle " width="125" height="125" alt=""> 
+                            </div> 
+                            <div class="form-group col-lg-10 col-md-10 col-sm-6 col-xs-12" style="padding-top: 25px;">
+                                <span ><img src="images/markng1.png" width="12" height="12" alt=""></span>
+                                <span>Hiver is hands down the best way for us to collaborate on Gmail.Managing our</span>
+                                <p>scheduling has never been easier.</p>
+                                <span><label>Christian Leybold - (General Partner, eVentures.vc)</label></span>
+                                <span ><img src="images/markng2.png" width="12" height="12" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class=" jumbotron " style="background-color: #ffffff;border-radius: 15px;">
+                            <div class="form-group">
+                                <form id="user-form" name="userform" novalidate="novalidate" valid-submit="saveClick()">
+                                    <div class="form-group ">
+                                        <span style="color: #c2bbbb"><span class="glyphicon glyphicon-envelope" >Enter&nbsp;Email</span></span>
+                                        <input  class="form-control" type="email" name="email" data-ng-model="userModifyData.item.UserName" required maxlength="250" placeholder="Enter Email Address">
+                                        <span class="text-danger" data-ng-show="userform.$submitted && userform.email.$error.required">Please Enter Email Address</span>
+                                        <span class="text-danger" data-ng-show="userform.$submitted && userform.email.$error.email">Invalid email.</span>
+                                    </div>
+                                    <div class="text-danger" data-ng-show="empForm.$submitted && empForm.email.$error.required">Email Is Required <i class="fa fa-exclamation-circle"></i></div>
+                                    <div class="form-group ">
+                                        <span style="color: #c2bbbb"><span class="glyphicon glyphicon-earphone">Enter&nbsp;Phone</span></span>
+                                        <input type="number" name="phone" class="form-control" data-ng-model="data.phone" required/>
+                                    <span class="text-danger" data-ng-show="userform.$submitted && userform.phone.$error.required">Please Enter Email Address</span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <button type="submit" class="form-control btn " style="background-color:#ef7125; color: #ffffff; ">Get started for free</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="text-center"><img src="images/Untitled-4.jpg" width="100" height="100" alt=""></div>
+                        <div>  <h4 class="text-center"><label>QUICK SYNC</label></h4></div>
+                        <div>
+                            <p class="text-center">Guarantee exceptional support through</p>
+                            <p class="text-center">phone,email your website and even</p>
+                            <p class="text-center">facebook and twitter ,All from</p>
+                            <p class="text-center">one place</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="text-center"><img src="images/Untitled-3.jpg" width="100" height="100" alt=""></div>
+                        <h4 class="text-center"><label>SIMPLE MANAGEMENT</label></h4>
+                        <p class="text-center">Reduce support load by helping</p>
+                        <p class="text-center">customer help them selves to FAQs and</p>
+                        <p class="text-center">discussion on your self service</p>
+                        <p class="text-center">portal</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="text-center"><img src="images/Untitled-2.jpg" width="100" height="100" alt=""></div>
+                        <h4 class="text-center"><label>Task AND NOTIFICATION</label></h4>
+                        <p class="text-center">Get your sales & support tram work</p>
+                        <p class="text-center">together.Let go of those syncing issues;</p>
+                        <p class="text-center">integrate 'em like never before</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="text-center"><img src="images/Untitled-1.jpg" width="100" height="100" alt=""></div>
+                        <h4 class="text-center"><label>AUTOMATIC REPLY SYNC</label></h4>
+                        <p class="text-center">No hidden charges,no under the belt</p>
+                        <p class="text-center">add ons,your monthly cost with the</p>
+                        <p class="text-center">Sprout plan is exactly $0.</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color: #f9f9f9">
+                    <span class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center"><img src="images/chang.png" width="125" height="44" alt=""></span>
+                    <span class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center"><img src="images/pintrest.png" width="125" height="44" alt=""></span>
+                    <span class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center"><img src="images/ookla.png" width="125" height="44" alt=""></span>
+                    <span class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center"><img src="images/lab.png" width="125" height="44" alt=""></span>
+                    <span class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center"><img src="images/lumerit.png" width="125" height="44" alt=""></span>
+                    <span class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center"><img src="images/redbeam.png" width="125" height="44" alt=""></span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="pull-left col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <span>  
+                            <img src="images/hiverlogo.png" width="125" height="44" alt=""></span>
+                        <span class="footer-inner-part">
+                            <span class="text-center copy-right-msg">
+                                &copy; 2017 Copyright Hiver. All Rights Reserved |<a class="text-center copy-right-msg" href="/terms">Terms of Service</a>|<a class=" text-centercopy-right-msg" href="/privacy">Privacy Policy</a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <span class="pull-right copy-right-msg text-center">   Simple,Collaboration with Shared Gmail Labels</span>
+                    </div>
+                </div>	
+            </div>
+        </div>
+        <script src="vendor/angularjs/angular.js" type="text/javascript"></script>
+        <script src="Script/app.js" type="text/javascript"></script>
+        <script src="vendor/angular-bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        <script src="vendor/angular-bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="vendor/angular-bootstrap/js/npm.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
